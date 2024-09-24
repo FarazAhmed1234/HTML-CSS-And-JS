@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="stylesign.css">
+    <script type="module" src="Firebase.js"></script>   
+
+    <!-- Boxicons Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="https://formspree.io/f/xzzpwrdp" method="POST">
+            <h1>Sign Up</h1>
+            <h6>Create your account</h6>
+            <div class="input1">
+
+                <label for="input-firstname">
+                    <i class='bx bxs-user-circle' style="color: black;"></i>
+                    <input type="text" name="firstname" id="input-firstname" class="input" placeholder="UserName" required>
+                </label><br><br>
+
+                <label for="input-email">
+                    <i class='bx bxs-envelope' style="color: black;"></i>
+                    <input type="email" name="email" id="input-email" class="input" placeholder="Email" required>
+                </label><br><br>
+
+                <label for="input-password">
+                    <i class='bx bxs-lock-alt' style="color: black;"></i>
+                    <input type="password" name="password" id="input-password" class="input" placeholder="Password" required>
+                </label><br><br>
+
+                <label for="input-Repeat-password">
+                    <i class='bx bxs-lock-alt' style="color: black;"></i>
+                    <input type="password" name="Repeat-password" id="input-Repeat-password" class="input" placeholder="Repeat Password" required>
+                </label><br><br>
+
+                <button class="button" type="submit">Signup</button>
+            </div>
+        </form>
+        <p>Already have an Account? <a href="login.html" class="login">Login</a></p>
+    </div>
+
+    <script type="text/javascript" src="sign.js" defer></script>
+
+</body>
+
+</html>
