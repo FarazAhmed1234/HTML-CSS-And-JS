@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --accent-color: #8672FF;
+    --base-color: white; /* Fixed the color variable */
+    --text-color: #2E2B41;
+    --input-color: #F3F0FF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: Poppins, Segoe UI, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+    text-align: center;
+    color: var(--text-color);
+}
+
+body{
+    min-height: 100vh;
+    background-image: url('background.jpeg');
+    background-position: right;
+}
+
+.wrapper{
+    background-color: white;
+    margin: 8% auto;
+    width: 30%;
+    height: auto; /* Adjusted to auto for responsive height */
+    border-radius: 14px;
+    padding: 20px; /* Added padding for better spacing */
+}
+
+h1{
+    padding-top: 19px;
+}
+
+h6{
+    margin-top:8px
+}
+
+form{
+    width: min(400px, 100%);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.button{
+    height: 32px;
+    width: 80px;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    margin-top: 14px;
+    margin-bottom: -26px;
+}
+
+.button:hover{
+    background-color: black;
+}
+
+.login{
+    text-decoration: none;
+    color: blue;
+}
+
+.login:hover{
+    color: #8672FF;
+}
+
+.input{
+    height: 30px;
+    width: 205px;
+    background-color: rgb(244, 237, 244);
+    border: none;
+    border-radius: 7px;
+}
+
+/* Tablets and smaller laptops (up to 992px) */
+@media screen and (max-width: 992px) {
+    .wrapper {
+        width: 40%;
+        margin-top: 10%;
+    }
+}
+
+
+/* Tablets (up to 768px) */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 50%;
+        margin-top: 12%;
+    }
+}
+
+/* Mobile devices (up to 576px) */
+@media screen and (max-width: 576px) {
+    .wrapper {
+        width: 70%;
+        margin: 30% auto; /* Centered the wrapper */
+    }
+}
